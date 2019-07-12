@@ -1,0 +1,98 @@
+:root {
+	--active: #fff;
+	--normal: #ff0126;
+	--strwidth: 6px;
+}
+
+.t-loader {
+	width: 38px;
+	height: 34px;
+}
+
+.t-loader .dot {
+	z-index: 2;
+	animation: dotSnake 2s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+.t-loader polygon{
+	stroke-dasharray: 64.7 32;
+	stroke-dashoffset: 0;
+	animation: snake 2s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+@keyframes snake {
+	33% {
+		stroke-dashoffset: 32;
+  }
+	66% {
+		stroke-dashoffset: 64;
+	}
+	100% {
+		stroke-dashoffset: 96;
+	}
+}
+
+@keyframes dotSnake {
+	33% {
+		transform: translate(8px,-14px);
+  }
+	66% {
+		transform: translate(-8px,-14px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+
+
+
+.c-loader {
+	width: 34px;
+	height: 34px;
+}
+
+.c-loader .dot {
+	stroke-dasharray: 0 27.9;
+	transform-origin: 17px 17px;
+	animation: rotation 3s linear infinite;
+}
+
+.juggler {
+	display: block;
+	stroke-dasharray: 50 1000;
+	stroke-dashoffset: 0;
+	transform-origin: 17px 17px;
+	animation: rotation .8s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+  }
+	100% {
+		transform: rotate(-359deg);
+	}
+}
+
+.wrapper {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+svg {
+	fill: none;
+	stroke: var(--normal);
+	stroke-width: var(--strwidth);
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	/*outline: 1px solid red;*/
+}
+
+.active {
+	stroke: var(--active);
+}

@@ -1,0 +1,17 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+//@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Quicksand:300,700');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Apply all
+@import 'custom';
+@import 'loader';
+
+//Student stylesheet
+@import 'student-home-styles';

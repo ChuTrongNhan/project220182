@@ -1,0 +1,270 @@
+body {
+  background-color: #e9e9e9;
+  overflow: hidden;
+}
+
+.h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.h3 {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.center {
+  justify-content: center !important;
+}
+
+.left {
+  justify-content: flex-start !important;
+}
+
+.login-tag {
+  position: relative;
+  width: 48vw;
+  min-width: 620px;
+  height: 520px;
+  background: $tag-background;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 100px;
+  margin:auto
+}
+
+.home-tag {
+  position: relative;
+  width: 22vw;
+  min-width: 300px;
+  height: 520px;
+  background: $tag-background;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 35px 35px 0 35px;
+  margin:auto
+}
+
+.popup-full {
+}
+
+.info-page {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  width: 80vw;
+  height: 520px;
+  background: $tag-background;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 35px 35px 0 35px;
+  margin:auto;
+  .info-page-row {
+    display: table;
+    padding: 15px 0 15px 20px;
+    border-bottom: 1px solid #d0d0d0;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 60px;
+    width: 92%;
+    .row {
+      padding-left: 15px;
+      height: 20px;
+    }
+    .row:nth-child(2) {
+      height: 40px;
+    }
+  }
+}
+
+.loading-background {
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0; left:0;
+}
+
+.avatar {
+  min-width: 168px;
+  min-height: 168px;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 84px;
+  background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/190423100153-01-charlie-the-otter-file-large-169.jpg");
+  background-size: cover;
+  background-position: center;
+  margin:auto;
+}
+
+input, input:focus{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: $black;
+  text-align: center;
+  background: none;
+  width: 100%;
+  height: 40px;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #c6c6c6;
+  border-left: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.table-title-h1 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 30px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.table-title-h2 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.txt-primary-color {
+  color: $primary !important;
+}
+
+//Button
+.button {
+    height: 40px;
+    width: 190px;
+
+    line-height: 40px;
+    font-family: Roboto;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.button:hover { cursor: pointer }
+
+.button--primary {
+    background: $primary;
+    color: $white;
+    transition: all 0.2s;
+}
+
+.button--primary:hover { width: 208px }
+
+.button--negative {
+    color: $gray;
+    border: 1px solid $gray;
+    transition: all 0.2s;
+}
+
+.button--negative:hover {
+    color: $primary;
+    border: 1px solid $primary;
+}
+
+.round-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.round-button:hover {  cursor: pointer }
+
+.round-button--primary {
+    background-color: $primary;
+    color: $white;
+}
+
+.round-button__expand {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: $primary;
+  color: $white;
+  float: left;
+  margin-left: -40px;
+}
+
+.round-button--negative {
+    border: 1px solid $gray;
+}
+
+.text-button {
+  line-height: 40px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: $gray
+}
+
+.text-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+//Table
+#mytable {
+  border-collapse: collapse;
+  width: 48vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#mytable td, #mytable th {
+  border-right: 1px solid #fff;
+  padding: 8px;
+  font-weight: 400;
+}
+
+#mytable tr:nth-child(even){background-color: #f1f1f1;}
+
+#mytable tr:hover {background-color: #ddd;}
+
+#mytable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: $primary;
+  color: $white;
+}
+
+#mytable--medium {width: 130px}
+#mytable--narrow {width: 95px}
+#mytable--wide   {width: 225px}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.slide-fade-enter {
+  opacity: 0;
+  transform: translate(-2em, 0);
+}
+
+.slide-fade-leave-active {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
